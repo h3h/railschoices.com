@@ -10,6 +10,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   cursor: default;
 }
+p {
+  line-height: 1.8em;
+}
 #content {
   background-color: #f0f2eb;
   border: 1px solid #aaa;
@@ -19,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-box-shadow: 5px 5px 5px #aaa;
   -webkit-box-shadow: 5px 5px 5px #aaa;
   margin: 0 auto 3em;
-  padding: 25px 80px;
+  padding: 10px 80px 25px;
   width: 700px;
 }
 #content div.item {
@@ -106,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 700px;
 }
 #header a {
-  color: #67917a;
+  color: #9a9a9a;
   cursor: pointer;
   font-size: 48px;
   font-weight: bold;
@@ -115,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   text-shadow: 2px 2px 2px #bbb;
 }
 #header a:hover {
-  color: #547865;
+  color: #8a8a8a;
 }
 #header .tagline {
   background-color: #D4EE5E;
@@ -123,6 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #666;
   font-size: 13px;
   margin: 0;
+  opacity: 0.8;
   padding: 5px 10px;
   position: absolute;
   right: 0;

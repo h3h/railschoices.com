@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  {% if page.title %}
   <title>{{page.title}}</title>
+  {% elsif page.topic %}
+  <title>Choosing {{page.topic}} in Rails</title>
+  {% else %}
+  <title>Rails Choices</title>
+  {% endif %}
   <link rel="stylesheet" href="../styles/site.css">
   {% if page.is_page %}
   <!script src="http://h3h.github.com/github-repo-widget/widget.js"></script>
@@ -9,7 +16,7 @@
 </head>
 <body>
   <div id="header">
-    <p class="tagline">Which choices are best for your Rails app?</p>
+    <p class="tagline">Which ones are best for your Rails app?</p>
     <a href="/">Rails Choices</a>
   </div>
 
@@ -24,6 +31,8 @@
       Attribution Share-Alike License</a>
     &middot;
     <a href="/colophon.html">Colophon</a>
+    &middot;
+    <a href="http://getsatisfaction.com/railschoices">Give Feedback</a>
   </div>
 </body>
 </html>

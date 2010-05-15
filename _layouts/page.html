@@ -2,13 +2,20 @@
 layout: default
 is_page: true
 ---
+{% if page.title %}
 <h1>{{page.title}}</h1>
+{% elsif page.topic %}
+<h1>Choosing {{page.topic}} in Rails</h1>
+{% endif %}
+
 {% if page.header %}
 <p class="section_header">{{page.header}}</p>
 {% endif %}
 
 {{content}}
 
+{% if page.topic %}
 <p class="suggest">
-  <a href="">Suggest another choice for this category</a>
+  <a href="http://getsatisfaction.com/railschoices/topics/new?style=idea&amp;query=I%20have%20an%20idea%20for%20a%20new%20option%20in%20the%20{{page.topic}}%20category%E2%80%A6">Suggest another choice for this category</a>
 </p>
+{% endif %}
