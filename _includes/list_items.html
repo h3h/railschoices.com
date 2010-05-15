@@ -1,0 +1,25 @@
+{% for item in page.items %}
+<div class="item">
+  {% if item.github_repo %}
+  <div id="gh_{{item.github_repo|replace:'/','_'}}"
+       class="gh_widget loading">&hellip;</div>
+  <script>GHWidget.init("gh_{{item.github_repo|replace:'/','_'}}",
+                        "{{item.github_repo}}");</script>
+  {% endif %}
+
+  <h2><a href="{{item.url}}">{{item.name}}</a></h2>
+
+  {% if item.maintainer %}
+  <dl class="maintainer">
+    <dt>Maintainer:</dt>
+    <dd>{{item.maintainer}}</dd>
+  </dl>
+  {% endif %}
+
+  {% if item.editorial %}
+  <p class="editorial">
+    {{item.editorial}}
+  </p>
+  {% endif %}
+</div>
+{% endfor %}
