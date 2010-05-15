@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="../styles/site.css">
-  <!script src="http://h3h.github.com/github-repo-widget/widget.js"></script>
   <title>{{page.title}}</title>
+  <link rel="stylesheet" href="../styles/site.css">
+  {% if page.is_page %}
+  <!script src="http://h3h.github.com/github-repo-widget/widget.js"></script>
+  {% endif %}
 </head>
 <body>
   <div id="header">
+    <p class="tagline">Which choices are best for your Rails app?</p>
     <a href="/">Rails Choices</a>
   </div>
 
