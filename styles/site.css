@@ -82,8 +82,12 @@ h1, h2, h3, h4, h5, h6 {
 #content .gh_widget.loading {
   text-align: center;
 }
+#content .section_header {
+  color: #444;
+}
 #footer {
   color: #666;
+  cursor: default;
   font-size: 13px;
   text-align: center;
 }

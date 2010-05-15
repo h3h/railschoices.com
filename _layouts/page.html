@@ -1,28 +1,13 @@
 ---
 layout: default
 ---
-<div id="header">
-  <a href="/">Rails Choices</a>
-</div>
+<h1>{{page.title}}</h1>
+{% if page.header %}
+<p class="section_header">{{page.header}}</p>
+{% endif %}
 
-<div id="content">
-  <h1>{{page.title}}</h1>
-  {% if page.header %}
-  <p class="section_header">{{page.header}}</p>
-  {% endif %}
+{{content}}
 
-  {{content}}
-
-  <p class="suggest">
-    <a href="">Suggest another choice for this category</a>
-  </p>
-</div>
-
-<div id="footer">
-  Created by <a href="http://h3h.net/">Brad Fults</a>
-  &middot;
-  <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
-    Attribution Share-Alike License</a>
-  &middot;
-  <a href="/colophon.html">Colophon</a>
-</div>
+<p class="suggest">
+  <a href="">Suggest another choice for this category</a>
+</p>
