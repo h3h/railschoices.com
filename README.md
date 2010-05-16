@@ -1,4 +1,7 @@
 # Rails Choices Jekyll Site
 
-Herein lies the source for the [railschoices.com](http://railschoices.com/)
-site, as a [jekyll](http://jekyllrb.com/) site.
+This repo contains the source for
+[railschoices.com](http://railschoices.com/), a site that aims to help Rails
+developers make choices about their apps.
+
+Made with [jekyll](http://jekyllrb.com/).
