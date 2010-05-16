@@ -2,6 +2,13 @@
   font-family: Chunk;
   src: url(Chunk.otf);
 }
+a {
+  color: #882828;
+  text-decoration: none;
+}
+a:hover {
+  color: #2D1111;
+}
 body {
   background-color: #D3D4CD;
   color: #444;
@@ -54,13 +61,41 @@ p {
 #content div.item h2 a:hover {
   color: #7C856E;
 }
+#content div.topic {
+  background-color: #E2E3C6;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  color: #555;
+  float: left;
+  margin: 1em 28px 0 0;
+  padding: 10px 15px 0;
+  width: 289px;
+}
+#content div.topic h3 {
+  margin: 0;
+  text-align: center;
+}
+#content div.topic h3 a {
+  color: #444;
+  text-decoration: none;
+}
+#content div.topic h3 a:hover {
+  color: #7C856E;
+}
+#content div.topic p {
+  line-height: 1.25em;
+}
 #content h1 {
   color: #ff4242;
   font-family: Chunk, "Lucida Grande", Verdana, sans-serif;
 }
 #content p.suggest {
+  clear: both;
   font-size: 22px;
   font-weight: bold;
+  padding-top: 1.5em;
   text-align: center;
 }
 #content p.suggest a {

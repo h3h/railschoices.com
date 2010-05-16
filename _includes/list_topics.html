@@ -1,5 +1,10 @@
 {% for topic in page.topics %}
-<div class="item">
+<div class="topic">
   <h3><a href="{{topic.url}}">{{topic.name}}</a></h3>
+  <p>{{topic.intro}}</p>
 </div>
 {% endfor %}
+
+<p class="suggest">
+  <a href="http://getsatisfaction.com/railschoices/topics/new?style=idea&amp;query=I%20have%20an%20idea%E2%80%A6">Have suggestions for this site?</a>
+</p>
