@@ -127,6 +127,7 @@ p {
   color: #666;
   cursor: default;
   font-size: 13px;
+  margin: 1em 0 2em;
   text-align: center;
 }
 #footer a {
